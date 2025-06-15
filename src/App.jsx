@@ -6,6 +6,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import PostDetail from './pages/PostDetail'
+import CreatePost from './pages/CreatePost'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/posts/:id" element={<PostDetail />}></Route>
+          <Route path="/create" element={<CreatePost />} />
         </Routes>
       </div>
     </BrowserRouter>
